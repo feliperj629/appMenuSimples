@@ -9,6 +9,12 @@ export default function HomeScreen({ navigation }) {
         title="Ir para Sobre"
         onPress={() => navigation.navigate('About')}
       />
+
+    <Button
+    title="Ir para Formulário"
+    onPress={() => navigation.navigate('Form')}
+    />
+    
     </View>
   );
 }
