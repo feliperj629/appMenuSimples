@@ -55,6 +55,10 @@ npm install @react-navigation/native @react-navigation/native-stack
 
 # Instalar dependências necessárias
 npm install react-native-safe-area-context react-native-screens
+
+# Instalar opção para navegação pela web
+npx expo install react-dom react-native-web
+
 ```
 
 ### Passo 3: Estrutura de Arquivos
@@ -75,6 +79,20 @@ AppMenuSimples/
 ```
 
 ### Passo 4: Configurar o App.js
+
+**O que estamos fazendo:** Neste passo, vamos configurar o arquivo principal do aplicativo (`App.js`) para estabelecer a navegação entre as telas. Este é o "coração" do nosso app, onde definimos como o usuário pode navegar de uma tela para outra.
+
+**Finalidade:** 
+- Criar um sistema de navegação em pilha (Stack Navigator)
+- Definir todas as telas disponíveis no aplicativo
+- Estabelecer qual tela será exibida primeiro (tela inicial)
+- Permitir que o usuário navegue entre as diferentes seções do app
+
+**Conceitos importantes:**
+- `NavigationContainer`: Componente que envolve toda a navegação
+- `createNativeStackNavigator`: Cria um navegador em pilha
+- `Stack.Navigator`: Define as configurações de navegação
+- `Stack.Screen`: Define cada tela individual do aplicativo
 
 ```javascript
 import React from 'react';
@@ -302,12 +320,12 @@ npm install
 
 ```bash
 # Iniciar o servidor de desenvolvimento
-npm start
+npx expo start
 
 # Ou usar os comandos específicos do Expo
-npm run android  # Para Android
-npm run ios      # Para iOS
-npm run web      # Para Web
+npx expo start --android  # Para Android
+npx expo start --ios      # Para iOS
+npx expo start --web      # Para Web
 ```
 
 ### Testando no Dispositivo
