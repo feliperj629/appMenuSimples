@@ -10,6 +10,49 @@ Este é um projeto de aplicativo mobile desenvolvido em **React Native** durante
 - Praticar passagem de parâmetros entre telas
 - Desenvolver interface básica com React Native
 
+### Mais informações sobre o uso de navegação:
+
+**Navegação em aplicativos React Native com Expo**
+
+Quando criamos aplicativos móveis, é comum termos várias telas que precisam se conectar entre si. Para isso, o **React Navigation** é uma das bibliotecas mais utilizadas no ecossistema React Native. Ele oferece diferentes formas de organizar a navegação, dependendo da experiência de usuário que desejamos construir.
+
+Os três tipos mais comuns são: **Stack Navigation**, **Drawer Navigation** e **Bottom Tab Navigation**.
+
+#### 1. Stack Navigation (Navegação em Pilha)
+
+- Funciona como uma pilha de páginas (similar ao histórico de um navegador)
+- Cada nova tela "empilha" sobre a anterior, e o usuário pode voltar para a tela anterior
+- É muito usado em fluxos lineares, como: login → cadastro → página inicial → detalhes de um item
+- O cabeçalho superior geralmente já vem configurado com botão de "voltar"
+
+**📌 Exemplo de uso:** aplicativos que têm telas sequenciais, como um fluxo de compra em e-commerce.
+
+#### 2. Drawer Navigation (Navegação com Menu Lateral)
+
+- Exibe um menu lateral (drawer) que pode ser aberto deslizando o dedo da esquerda para a direita ou tocando em um ícone de menu
+- É indicado quando existem muitas seções ou categorias que o usuário pode acessar a qualquer momento
+- Permite incluir ícones, textos e até cabeçalhos personalizados dentro do menu
+
+**📌 Exemplo de uso:** aplicativos de notícias, redes sociais ou sistemas com muitas páginas diferentes (ex: Gmail).
+
+#### 3. Bottom Tab Navigation (Navegação com Abas Inferiores)
+
+- Adiciona um menu inferior fixo com abas (ícones e/ou textos)
+- Facilita o acesso rápido às principais áreas do app, como "Início", "Pesquisar", "Perfil"
+- Pode ser combinado com Stack ou Drawer para fluxos mais complexos
+- É uma navegação muito popular porque segue o padrão de design dos principais aplicativos móveis
+
+**📌 Exemplo de uso:** apps como Instagram, Twitter ou aplicativos de banco, onde as funções principais ficam no menu inferior.
+
+#### Conclusão
+
+- **Stack** é ideal para navegação sequencial
+- **Drawer** é útil quando existem muitas opções e categorias  
+- **Bottom Tab** é ótimo para destacar as principais funcionalidades do aplicativo
+
+Na prática, esses tipos de navegação podem ser combinados. Por exemplo, um app pode ter abas inferiores (Bottom Tabs), onde cada aba abre novas telas em pilha (Stack), e ainda contar com um menu lateral (Drawer) para acessar configurações ou páginas extras.
+
+
 ## 🚀 Funcionalidades
 
 O aplicativo possui 4 telas principais:
